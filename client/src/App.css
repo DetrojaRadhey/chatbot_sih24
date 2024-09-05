@@ -1,0 +1,99 @@
+.outer{
+  height: 89vh;
+  width: 100%;
+  display: flex;
+}
+
+.left{
+  background-color: rgb(83, 160, 237);
+  width: 30%;
+  /* height: 612px; */
+  height: 100%;
+}
+
+.right{
+  background-color: aquamarine;
+  width: 70%;
+}
+
+.chat{
+  background-color: blueviolet;
+  height: 85%;
+}
+
+.search{
+  background-color: chartreuse;
+  height: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input{
+  all: unset;
+  padding: 15px;
+  width: 90%;
+  border: none;
+  border-radius: 50px;
+}
+
+.btn{
+  border: none;
+  border-radius: 50px;
+  font-size: 15px;
+  background-color: white;
+}
+
+.send{
+  background-color: white;
+  margin-top: 20px;
+  width: 80%;
+  border: none;
+  border-radius: 50px;
+  display: flex;
+  /* padding: 15px; */
+}
+
+
+/* #root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+} */
