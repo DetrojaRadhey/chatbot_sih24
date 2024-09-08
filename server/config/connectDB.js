@@ -1,10 +1,21 @@
-const mongoose = require('mongoose')
+// import mysql from 'mysql2/promise';
+const mysql = require('mysql2/promise');
+const dotenv = require('dotenv');
 
-async function connectDB(){
+dotenv.config();
+
+async function connectDB() {
     try {
-        await mongoose.connect("mongodb://127.0.0.1:27017/chatbot");
+        const connection = await mysql.createConnection({
+            host: 'localhost',
+            user: 'root',
+            database: 'SIH24',
+            password: process.env.SQL_PASSWORD
+        });
+        return connection;
     } catch (error) {
-        console.log("Something is wrong ",error)
+        console.log("Something is wrong ", error);
+        throw error;
     }
 }
 

@@ -10,9 +10,15 @@ app.use(cors({
     credentials : true
 }));
 
-connectDB().then(()=>{
-    console.log("DB is connected");
-});
+(async () => {
+    try {
+      await connectDB();
+      console.log("DB is connected");
+    } catch (error) {
+      console.error("Database connection failed:", error);
+      process.exit(1);
+    }
+})();
 
 app.use(express.json());
 app.use(bodyParser.json());
